@@ -13,7 +13,7 @@ export default function HomePage() {
                 <div className={styles.widget}>
                     <div className={styles.widget_content}>
                         <div className={styles.widget_header_div}>
-                            <h2>What's the right</h2>
+                            <h2>What&apos;s the right</h2>
                             <h2>degree program for you?</h2>
                         </div>
                         <div className={styles.widget_para_div}>
