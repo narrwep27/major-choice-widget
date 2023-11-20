@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Black.eot');
+    src: url('MetaPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Black.woff2') format('woff2'),
+        url('MetaPro-Black.woff') format('woff'),
+        url('MetaPro-Black.ttf') format('truetype'),
+        url('MetaPro-Black.svg#MetaPro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Bold.eot');
+    src: url('MetaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Bold.woff2') format('woff2'),
+        url('MetaPro-Bold.woff') format('woff'),
+        url('MetaPro-Bold.ttf') format('truetype'),
+        url('MetaPro-Bold.svg#MetaPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-BlackItalic.eot');
+    src: url('MetaPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-BlackItalic.woff2') format('woff2'),
+        url('MetaPro-BlackItalic.woff') format('woff'),
+        url('MetaPro-BlackItalic.ttf') format('truetype'),
+        url('MetaPro-BlackItalic.svg#MetaPro-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-BoldItalic.eot');
+    src: url('MetaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-BoldItalic.woff2') format('woff2'),
+        url('MetaPro-BoldItalic.woff') format('woff'),
+        url('MetaPro-BoldItalic.ttf') format('truetype'),
+        url('MetaPro-BoldItalic.svg#MetaPro-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-ThinItalic.eot');
+    src: url('MetaPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-ThinItalic.woff2') format('woff2'),
+        url('MetaPro-ThinItalic.woff') format('woff'),
+        url('MetaPro-ThinItalic.ttf') format('truetype'),
+        url('MetaPro-ThinItalic.svg#MetaPro-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Italic.eot');
+    src: url('MetaPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Italic.woff2') format('woff2'),
+        url('MetaPro-Italic.woff') format('woff'),
+        url('MetaPro-Italic.ttf') format('truetype'),
+        url('MetaPro-Italic.svg#MetaPro-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro.eot');
+    src: url('MetaPro.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro.woff2') format('woff2'), url('MetaPro.woff') format('woff'),
+        url('MetaPro.ttf') format('truetype'),
+        url('MetaPro.svg#MetaPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Thin.eot');
+    src: url('MetaPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Thin.woff2') format('woff2'),
+        url('MetaPro-Thin.woff') format('woff'),
+        url('MetaPro-Thin.ttf') format('truetype'),
+        url('MetaPro-Thin.svg#MetaPro-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Medium.eot');
+    src: url('MetaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Medium.woff2') format('woff2'),
+        url('MetaPro-Medium.woff') format('woff'),
+        url('MetaPro-Medium.ttf') format('truetype'),
+        url('MetaPro-Medium.svg#MetaPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-LightItalic.eot');
+    src: url('MetaPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-LightItalic.woff2') format('woff2'),
+        url('MetaPro-LightItalic.woff') format('woff'),
+        url('MetaPro-LightItalic.ttf') format('truetype'),
+        url('MetaPro-LightItalic.svg#MetaPro-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Light.eot');
+    src: url('MetaPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Light.woff2') format('woff2'),
+        url('MetaPro-Light.woff') format('woff'),
+        url('MetaPro-Light.ttf') format('truetype'),
+        url('MetaPro-Light.svg#MetaPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-MediumItalic.eot');
+    src: url('MetaPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-MediumItalic.woff2') format('woff2'),
+        url('MetaPro-MediumItalic.woff') format('woff'),
+        url('MetaPro-MediumItalic.ttf') format('truetype'),
+        url('MetaPro-MediumItalic.svg#MetaPro-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Book';
+    src: url('MetaPro-BookItalic.eot');
+    src: url('MetaPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-BookItalic.woff2') format('woff2'),
+        url('MetaPro-BookItalic.woff') format('woff'),
+        url('MetaPro-BookItalic.ttf') format('truetype'),
+        url('MetaPro-BookItalic.svg#MetaPro-BookItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Book';
+    src: url('MetaPro-Book.eot');
+    src: url('MetaPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Book.woff2') format('woff2'),
+        url('MetaPro-Book.woff') format('woff'),
+        url('MetaPro-Book.ttf') format('truetype'),
+        url('MetaPro-Book.svg#MetaPro-Book') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBoldItalic.eot');
+    src: url('MetaPro-CondBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondBoldItalic.woff2') format('woff2'),
+        url('MetaPro-CondBoldItalic.woff') format('woff'),
+        url('MetaPro-CondBoldItalic.ttf') format('truetype'),
+        url('MetaPro-CondBoldItalic.svg#MetaPro-CondBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBold.eot');
+    src: url('MetaPro-CondBold.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondBold.woff2') format('woff2'),
+        url('MetaPro-CondBold.woff') format('woff'),
+        url('MetaPro-CondBold.ttf') format('truetype'),
+        url('MetaPro-CondBold.svg#MetaPro-CondBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBlack.eot');
+    src: url('MetaPro-CondBlack.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondBlack.woff2') format('woff2'),
+        url('MetaPro-CondBlack.woff') format('woff'),
+        url('MetaPro-CondBlack.ttf') format('truetype'),
+        url('MetaPro-CondBlack.svg#MetaPro-CondBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondMedium.eot');
+    src: url('MetaPro-CondMedium.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondMedium.woff2') format('woff2'),
+        url('MetaPro-CondMedium.woff') format('woff'),
+        url('MetaPro-CondMedium.ttf') format('truetype'),
+        url('MetaPro-CondMedium.svg#MetaPro-CondMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBlackItalic.eot');
+    src: url('MetaPro-CondBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondBlackItalic.woff2') format('woff2'),
+        url('MetaPro-CondBlackItalic.woff') format('woff'),
+        url('MetaPro-CondBlackItalic.ttf') format('truetype'),
+        url('MetaPro-CondBlackItalic.svg#MetaPro-CondBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondMediumItalic.eot');
+    src: url('MetaPro-CondMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondMediumItalic.woff2') format('woff2'),
+        url('MetaPro-CondMediumItalic.woff') format('woff'),
+        url('MetaPro-CondMediumItalic.ttf') format('truetype'),
+        url('MetaPro-CondMediumItalic.svg#MetaPro-CondMediumItalic')
+            format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-Cond.eot');
+    src: url('MetaPro-Cond.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Cond.woff2') format('woff2'),
+        url('MetaPro-Cond.woff') format('woff'),
+        url('MetaPro-Cond.ttf') format('truetype'),
+        url('MetaPro-Cond.svg#MetaPro-Cond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondItalic.eot');
+    src: url('MetaPro-CondItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondItalic.woff2') format('woff2'),
+        url('MetaPro-CondItalic.woff') format('woff'),
+        url('MetaPro-CondItalic.ttf') format('truetype'),
+        url('MetaPro-CondItalic.svg#MetaPro-CondItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Xbold';
+    src: url('MetaPro-CondXboldItalic.eot');
+    src: url('MetaPro-CondXboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondXboldItalic.woff2') format('woff2'),
+        url('MetaPro-CondXboldItalic.woff') format('woff'),
+        url('MetaPro-CondXboldItalic.ttf') format('truetype'),
+        url('MetaPro-CondXboldItalic.svg#MetaPro-CondXboldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Xbold';
+    src: url('MetaPro-CondXbold.eot');
+    src: url('MetaPro-CondXbold.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondXbold.woff2') format('woff2'),
+        url('MetaPro-CondXbold.woff') format('woff'),
+        url('MetaPro-CondXbold.ttf') format('truetype'),
+        url('MetaPro-CondXbold.svg#MetaPro-CondXbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Book';
+    src: url('MetaPro-CondBook.eot');
+    src: url('MetaPro-CondBook.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondBook.woff2') format('woff2'),
+        url('MetaPro-CondBook.woff') format('woff'),
+        url('MetaPro-CondBook.ttf') format('truetype'),
+        url('MetaPro-CondBook.svg#MetaPro-CondBook') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Book';
+    src: url('MetaPro-CondBookItalic.eot');
+    src: url('MetaPro-CondBookItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-CondBookItalic.woff2') format('woff2'),
+        url('MetaPro-CondBookItalic.woff') format('woff'),
+        url('MetaPro-CondBookItalic.ttf') format('truetype'),
+        url('MetaPro-CondBookItalic.svg#MetaPro-CondBookItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}

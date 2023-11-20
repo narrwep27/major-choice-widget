@@ -1,0 +1,56 @@
+@import url('../../static/meta-pro-fonts/fonts.css');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.widget {
+    display: flex;
+    justify-content: flex-end;
+    width: var(--widget-width);
+    height: var(--widget-height);
+    padding: 0.4rem;
+    background-image: url('../../static/images/home-screen.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.widget_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.widget_header_div,
+.widget_para_div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.widget_header_div {
+    font-family: Meta Pro Book;
+}
+
+.widget_para_div {
+    font-family: Meta Pro;
+}
+
+.widget_content > button {
+    padding: 0.6rem 2.2rem;
+    margin: 0.5rem;
+    background: rgb(241, 209, 48);
+    border-style: none;
+    font-weight: 900;
+    font-family: Meta Pro;
+    cursor: pointer;
+}

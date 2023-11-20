@@ -1,0 +1,25 @@
+:root {
+    --widget-width: 40%;
+    --widget-height: 50%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* background-image: url('../static/images/Design@Ubalt_Interactive-BG-v2.png');
+    background-size: cover;
+    background-position-y: -350px;
+    background-repeat: no-repeat; */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
