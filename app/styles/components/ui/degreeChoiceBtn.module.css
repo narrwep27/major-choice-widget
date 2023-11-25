@@ -1,0 +1,34 @@
+@import url('../../../../static/meta-pro-fonts/fonts.css');
+
+.undergraduate,
+.graduate,
+.graduate_certificate,
+.none {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 19%;
+    font-family: Meta Pro;
+    font-size: 1rem;
+    border-style: none;
+}
+
+.undergraduate {
+    background: var(--undergrad-bg-color);
+    color: white;
+}
+
+.graduate {
+    background: var(--graduate-bg-color);
+    color: white;
+}
+
+.graduate_certificate {
+    background: var(--graduate-cert-bg-color);
+}
+
+.none {
+    background: var(--gray-color);
+}
