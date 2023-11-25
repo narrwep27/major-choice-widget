@@ -35,6 +35,7 @@ export default function DegreeChoiceBtn({
             onClick={() =>
                 setScreen(
                     <AptitudeQuestionScreen
+                        key={degreeType}
                         degreeType={degreeType}
                         setScreen={setScreen}
                     />
