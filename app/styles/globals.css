@@ -1,6 +1,11 @@
 :root {
-    --widget-width: 40%;
-    --widget-height: 50%;
+    --widget-width: 750px;
+    --widget-height: 435px;
+    --bg-color: rgb(0, 25, 74);
+    --undergrad-bg-color: rgb(22, 117, 169);
+    --graduate-bg-color: rgb(0, 173, 211);
+    --graduate-cert-bg-color: rgb(241, 209, 48);
+    --gray-color: rgb(209, 209, 209);
 }
 
 * {
@@ -13,10 +18,6 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    /* background-image: url('../static/images/Design@Ubalt_Interactive-BG-v2.png');
-    background-size: cover;
-    background-position-y: -350px;
-    background-repeat: no-repeat; */
 }
 
 a {

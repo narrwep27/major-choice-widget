@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './styles/page.module.css';
-import DegreeChoiceScreen from './components/degreeChoiceScreen';
+import DegreeChoiceScreen from './components/screens/degreeChoiceScreen';
 import { JSX, useState } from 'react';
 
 export default function HomePage() {
@@ -20,13 +20,19 @@ export default function HomePage() {
                             <p>Take the quiz to find out what</p>
                             <p>program is right for you.</p>
                         </div>
-                        <button onClick={() => setScreen(DegreeChoiceScreen)}>
+                        <button
+                            onClick={() =>
+                                setScreen(
+                                    <DegreeChoiceScreen setScreen={setScreen} />
+                                )
+                            }
+                        >
                             START
                         </button>
                     </div>
                 </div>
             ) : (
-                <DegreeChoiceScreen />
+                screen
             )}
         </div>
     );

@@ -1,0 +1,123 @@
+@import url('../../../../static/meta-pro-fonts/fonts.css');
+
+.aptitude_question_screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--widget-width);
+    height: var(--widget-height);
+    background-color: var(--bg-color);
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+}
+
+.undergraduate_header,
+.graduate_header,
+.graduate_certificate_header,
+.none_header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    font-family: Meta Pro Book;
+}
+
+.undergraduate_header > h3,
+.graduate_header > h3,
+.graduate_certificate_header > h3,
+.none_header > h3 {
+    margin-left: 3rem;
+}
+
+.undergraduate_header > p,
+.graduate_header > p,
+.graduate_certificate_header > p,
+.none_header > p {
+    margin-right: 3rem;
+}
+
+.undergraduate_header {
+    background: var(--undergrad-bg-color);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.graduate_header {
+    background: var(--graduate-bg-color);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.graduate_certificate_header {
+    background: var(--graduate-cert-bg-color);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.none_header {
+    background: var(--gray-color);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.aptitude_question_screen_content_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.aptitude_question_screen_yes_no_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.aptitude_question_screen_yes_btn_undergraduate,
+.aptitude_question_screen_yes_btn_graduate,
+.aptitude_question_screen_yes_btn_graduate_certificate,
+.aptitude_question_screen_yes_btn_none,
+.aptitude_question_screen_no_btn {
+    margin: 1rem;
+    width: 17%;
+    height: 3.5rem;
+    border-style: none;
+    font-family: Meta Pro Book;
+    font-size: 1rem;
+}
+
+.aptitude_question_screen_yes_btn_undergraduate {
+    background: var(--undergrad-bg-color);
+    color: white;
+}
+
+.aptitude_question_screen_yes_btn_graduate {
+    background: var(--graduate-bg-color);
+    color: white;
+}
+
+.aptitude_question_screen_yes_btn_graduate_certificate {
+    background: var(--graduate-cert-bg-color);
+}
+
+.aptitude_question_screen_yes_btn_none {
+    background: var(--gray-color);
+}
+
+.aptitude_question_screen_navigation_div {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.aptitude_question_screen_navigation_div > button {
+    margin: 0 3rem;
+}
