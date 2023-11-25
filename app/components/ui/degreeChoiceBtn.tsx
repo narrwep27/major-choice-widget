@@ -35,7 +35,6 @@ export default function DegreeChoiceBtn({
             onClick={() =>
                 setScreen(
                     <AptitudeQuestionScreen
-                        key={degreeType}
                         degreeType={degreeType}
                         setScreen={setScreen}
                     />
@@ -43,7 +42,7 @@ export default function DegreeChoiceBtn({
             }
         >
             {nameStrArr.map((word) => (
-                <p>{word}</p>
+                <p key={word}>{word}</p>
             ))}
         </button>
     );
