@@ -1,49 +1,41 @@
 {
-    "aptitudeQuestionObjects": [
-        {
-            "degree": "undergraduate",
-            "questions": [
-                "I would like to expand on my writing skills.",
-                "I would like to learn the fundamentals of game design.",
-                "I have a strong visual imagination.",
-                "I enjoy working with computers and technology.",
-                "I like interacting with other people.",
-                "I enjoy keeping up with pop culture.",
-                "I enjoy coding.",
-                "I have the ability of coming up with new ways of doing things.",
-                "I like seeing my work on display.",
-                "I am comfortable with working on a project for long psans of time."
-            ]
-        },
-        {
-            "degree": "graduate",
-            "questions": [
-                "I need the freedom to be creative and express myself.",
-                "I am very ambitious, persuasive, and love coming up with new ideas.",
-                "I enjoy learning why people make certain decisions. I like to understand how people think and process information.",
-                "I enjoy expressing myself through writing.",
-                "I like to work with people.",
-                "I welcome unexpected changes.",
-                "I like tasks that involve problem solving.",
-                "I want to help bring accessibility to children and people in need of assistance with technology.",
-                "I like being hands on with my work.",
-                "I like being involved in every integrated detail of the project and get excited when I see the bigger picture or final output.",
-                "I like actively listening and following up with good questions to better communicate to help the needs of the otehr person.",
-                "I often pay close a†tention to detail and am well organized."
-            ]
-        },
-        {
-            "degree": "graduateCertificate",
-            "questions": [
-                "I am interested in research.",
-                "I enjoy deciphering data.",
-                "I am more of a doer than a planner.",
-                "I excel at adapting my language to fit the different circumstances.",
-                "I work well in a team setting.",
-                "I enjoy working within business models.",
-                "I enjoy figuring out how the human brain works in connection with computers.",
-                "I enjoy managing projects."
-            ]
-        }
-    ]
+    "aptitudeQuestionObjects": {
+        "undergraduate": [
+            "I would like to expand on my writing skills.",
+            "I would like to learn the fundamentals of game design.",
+            "I have a strong visual imagination.",
+            "I enjoy working with computers and technology.",
+            "I like interacting with other people.",
+            "I enjoy keeping up with pop culture.",
+            "I enjoy coding.",
+            "I have the ability of coming up with new ways of doing things.",
+            "I like seeing my work on display.",
+            "I am comfortable with working on a project for long psans of time."
+        ],
+        "graduate": [
+            "I need the freedom to be creative and express myself.",
+            "I am very ambitious, persuasive, and love coming up with new ideas.",
+            "I enjoy learning why people make certain decisions. I like to understand how people think and process information.",
+            "I enjoy expressing myself through writing.",
+            "I like to work with people.",
+            "I welcome unexpected changes.",
+            "I like tasks that involve problem solving.",
+            "I want to help bring accessibility to children and people in need of assistance with technology.",
+            "I like being hands on with my work.",
+            "I like being involved in every integrated detail of the project and get excited when I see the bigger picture or final output.",
+            "I like actively listening and following up with good questions to better communicate to help the needs of the otehr person.",
+            "I often pay close a†tention to detail and am well organized."
+        ],
+        "graduate_certificate": [
+            "I am interested in research.",
+            "I enjoy deciphering data.",
+            "I am more of a doer than a planner.",
+            "I excel at adapting my language to fit the different circumstances.",
+            "I work well in a team setting.",
+            "I enjoy working within business models.",
+            "I enjoy figuring out how the human brain works in connection with computers.",
+            "I enjoy managing projects."
+        ],
+        "none": []
+    }
 }

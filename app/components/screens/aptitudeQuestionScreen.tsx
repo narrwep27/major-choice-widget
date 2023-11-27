@@ -1,6 +1,7 @@
 import styles from '@/app/styles/components/screens/aptitudeQuestionScreen.module.css';
-import { JSX, Dispatch, SetStateAction, useState } from 'react';
-import { DegreeType } from '@/app/components/ui/degreeChoiceBtn';
+import { JSX, Dispatch, SetStateAction, useState, useEffect } from 'react';
+import { DegreeType } from '@/app/enums';
+import data from '@/static/aptitude-questions.json';
 
 type AptitudeQuestionScreenProps = {
     degreeType: DegreeType;
@@ -8,8 +9,44 @@ type AptitudeQuestionScreenProps = {
 };
 
 export default function AptitudeQuestionScreen({
-    degreeType
+    degreeType,
+    setScreen
 }: AptitudeQuestionScreenProps): JSX.Element {
+    const questionArr: string[] = data.aptitudeQuestionObjects[degreeType];
+    const [questionInd, setQuestionInd] = useState<number>(0);
+    const [currQuestion, setCurrQuestion] = useState<string>(
+        questionArr[questionInd]
+    );
+
+    const [undergradScores, setUndergradScores] = useState<{
+        baArtsDigitalComm: number | null;
+        baSciSimAndGameDesignScore: number | null;
+    }>({
+        baArtsDigitalComm: degreeType === DegreeType.UNDERGRADUATE ? 0 : null,
+        baSciSimAndGameDesignScore:
+            degreeType === DegreeType.UNDERGRADUATE ? 0 : null
+    });
+    const [gradScores, setGradScores] = useState<{
+        maArtsIntegDesign: number | null;
+        maFineArtsIntegDesign: number | null;
+        maSciIntegDesAndInfoArch: number | null;
+        docSciInfoAndIntegDesScore: number | null;
+    }>({
+        maArtsIntegDesign: degreeType === DegreeType.GRADUATE ? 0 : null,
+        maFineArtsIntegDesign: degreeType === DegreeType.GRADUATE ? 0 : null,
+        maSciIntegDesAndInfoArch: degreeType === DegreeType.GRADUATE ? 0 : null,
+        docSciInfoAndIntegDesScore:
+            degreeType === DegreeType.GRADUATE ? 0 : null
+    });
+    const [gradCertScores, setGradCertScores] = useState<{
+        certDigitalComm: number | null;
+        certUserExp: number | null;
+    }>({
+        certDigitalComm:
+            degreeType === DegreeType.GRADUATE_CERTIFICATE ? 0 : null,
+        certUserExp: degreeType === DegreeType.GRADUATE_CERTIFICATE ? 0 : null
+    });
+
     let readableDegree: string;
     if (degreeType === DegreeType.UNDERGRADUATE) {
         readableDegree = 'Undergraduate';
@@ -21,6 +58,12 @@ export default function AptitudeQuestionScreen({
         readableDegree = 'None';
     }
 
+    useEffect(() => {
+        if (questionInd === questionArr.length) {
+            //setScreen(<EndScreen />);
+        }
+    }, []);
+
     return (
         <div className={styles.aptitude_question_screen}>
             <div className={styles[`${degreeType}_header`]}>
@@ -28,7 +71,7 @@ export default function AptitudeQuestionScreen({
                 <p>Answer each statement to the best of your ability.</p>
             </div>
             <div className={styles.aptitude_question_screen_content_div}>
-                <h1>question</h1>
+                <h1>{currQuestion}</h1>
                 <div className={styles.aptitude_question_screen_yes_no_div}>
                     <button
                         className={
@@ -45,8 +88,20 @@ export default function AptitudeQuestionScreen({
                 </div>
             </div>
             <div className={styles.aptitude_question_screen_navigation_div}>
-                <button>Previous</button>
-                <button>Skip</button>
+                <button
+                    className={
+                        styles.aptitude_question_screen_navigation_previous_btn
+                    }
+                >
+                    &#9204; Previous
+                </button>
+                <button
+                    className={
+                        styles.aptitude_question_screen_navigation_skip_btn
+                    }
+                >
+                    Skip &#9197;
+                </button>
             </div>
         </div>
     );

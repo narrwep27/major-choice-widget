@@ -1,6 +1,7 @@
 import styles from '@/app/styles/components/screens/degreeChoiceScreen.module.css';
 import { Dispatch, SetStateAction, JSX } from 'react';
-import DegreeChoiceBtn, { DegreeType } from '../ui/degreeChoiceBtn';
+import DegreeChoiceBtn from '../ui/degreeChoiceBtn';
+import { DegreeType } from '@/app/enums';
 
 export default function DegreeChoiceScreen({
     setScreen
