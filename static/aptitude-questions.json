@@ -1,49 +1,289 @@
 {
-    "aptitudeQuestionObjects": [
-        {
-            "degree": "undergraduate",
-            "questions": [
-                "I would like to expand on my writing skills.",
-                "I would like to learn the fundamentals of game design.",
-                "I have a strong visual imagination.",
-                "I enjoy working with computers and technology.",
-                "I like interacting with other people.",
-                "I enjoy keeping up with pop culture.",
-                "I enjoy coding.",
-                "I have the ability of coming up with new ways of doing things.",
-                "I like seeing my work on display.",
-                "I am comfortable with working on a project for long psans of time."
-            ]
-        },
-        {
-            "degree": "graduate",
-            "questions": [
-                "I need the freedom to be creative and express myself.",
-                "I am very ambitious, persuasive, and love coming up with new ideas.",
-                "I enjoy learning why people make certain decisions. I like to understand how people think and process information.",
-                "I enjoy expressing myself through writing.",
-                "I like to work with people.",
-                "I welcome unexpected changes.",
-                "I like tasks that involve problem solving.",
-                "I want to help bring accessibility to children and people in need of assistance with technology.",
-                "I like being hands on with my work.",
-                "I like being involved in every integrated detail of the project and get excited when I see the bigger picture or final output.",
-                "I like actively listening and following up with good questions to better communicate to help the needs of the otehr person.",
-                "I often pay close a†tention to detail and am well organized."
-            ]
-        },
-        {
-            "degree": "graduateCertificate",
-            "questions": [
-                "I am interested in research.",
-                "I enjoy deciphering data.",
-                "I am more of a doer than a planner.",
-                "I excel at adapting my language to fit the different circumstances.",
-                "I work well in a team setting.",
-                "I enjoy working within business models.",
-                "I enjoy figuring out how the human brain works in connection with computers.",
-                "I enjoy managing projects."
-            ]
-        }
-    ]
+    "aptitudeQuestionObjects": {
+        "undergraduate": [
+            {
+                "question": "I would like to expand on my writing skills.",
+                "positiveResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ]
+            },
+            {
+                "question": "I would like to learn the fundamentals of game design.",
+                "positiveResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ]
+            },
+            {
+                "question": "I have a strong visual imagination.",
+                "positiveResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ]
+            },
+            {
+                "question": "I enjoy working with computers and technology.",
+                "positiveResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ]
+            },
+            {
+                "question": "I like interacting with other people.",
+                "positiveResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ]
+            },
+            {
+                "question": "I enjoy keeping up with pop culture.",
+                "positiveResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ]
+            },
+            {
+                "question": "I enjoy coding.",
+                "positiveResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ]
+            },
+            {
+                "question": "I have the ability of coming up with new ways of doing things.",
+                "positiveResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ]
+            },
+            {
+                "question": "I like seeing my work on display.",
+                "positiveResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ]
+            },
+            {
+                "question": "I am comfortable with working on a project for long spans of time.",
+                "positiveResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ]
+            }
+        ],
+        "graduate": [
+            {
+                "question": "I need the freedom to be creative and express myself.",
+                "positiveResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ]
+            },
+            {
+                "question": "I am very ambitious, persuasive, and love coming up with new ideas.",
+                "positiveResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ]
+            },
+            {
+                "question": "I enjoy learning why people make certain decisions. I like to understand how people think and process information.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            },
+            {
+                "question": "I enjoy expressing myself through writing.",
+                "positiveResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ]
+            },
+            {
+                "question": "I like to work with people.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            },
+            {
+                "question": "I welcome unexpected changes.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            },
+            {
+                "question": "I like tasks that involve problem solving.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            },
+            {
+                "question": "I want to help bring accessibility to children and people in need of assistance with technology.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            },
+            {
+                "question": "I like being hands on with my work.",
+                "positiveResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ]
+            },
+            {
+                "question": "I like being involved in every integrated detail of the project and get excited when I see the bigger picture or final output.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            },
+            {
+                "question": "I like actively listening and following up with good questions to better communicate to help the needs of the other person.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            },
+            {
+                "question": "I often pay close a†tention to detail and am well organized.",
+                "positiveResponseDegrees": [
+                    "masterOfScienceInInteractionDesignAndInformationArchitecture",
+                    "doctorOfScienceInInformationAndInteractionDesign"
+                ],
+                "negativeResponseDegrees": [
+                    "masterOfArtsInIntegratedDesign",
+                    "masterOfFineArtsInIntegratedDesign"
+                ]
+            }
+        ],
+        "graduateCertificate": [
+            {
+                "question": "I am interested in research.",
+                "positiveResponseDegrees": [
+                    "certificateInUserExperienceDesign"
+                ],
+                "negativeResponseDegrees": ["certificateInDigitalCommunication"]
+            },
+            {
+                "question": "I enjoy deciphering data.",
+                "positiveResponseDegrees": [
+                    "certificateInUserExperienceDesign"
+                ],
+                "negativeResponseDegrees": ["certificateInDigitalCommunication"]
+            },
+            {
+                "question": "I am more of a doer than a planner.",
+                "positiveResponseDegrees": [
+                    "certificateInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": ["certificateInUserExperienceDesign"]
+            },
+            {
+                "question": "I excel at adapting my language to fit different circumstances.",
+                "positiveResponseDegrees": [
+                    "certificateInUserExperienceDesign"
+                ],
+                "negativeResponseDegrees": ["certificateInDigitalCommunication"]
+            },
+            {
+                "question": "I work well in a team setting.",
+                "positiveResponseDegrees": [
+                    "certificateInUserExperienceDesign"
+                ],
+                "negativeResponseDegrees": ["certificateInDigitalCommunication"]
+            },
+            {
+                "question": "I enjoy working within business models.",
+                "positiveResponseDegrees": [
+                    "certificateInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": ["certificateInUserExperienceDesign"]
+            },
+            {
+                "question": "I enjoy figuring out how the human brain works in connection with computers.",
+                "positiveResponseDegrees": [
+                    "certificateInUserExperienceDesign"
+                ],
+                "negativeResponseDegrees": ["certificateInDigitalCommunication"]
+            },
+            {
+                "question": "I enjoy managing projects.",
+                "positiveResponseDegrees": [
+                    "certificateInUserExperienceDesign"
+                ],
+                "negativeResponseDegrees": ["certificateInDigitalCommunication"]
+            }
+        ],
+        "none": []
+    }
 }

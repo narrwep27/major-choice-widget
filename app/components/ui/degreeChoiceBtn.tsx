@@ -1,49 +1,41 @@
 import { JSX, Dispatch, SetStateAction } from 'react';
 import styles from '@/app/styles/components/ui/degreeChoiceBtn.module.css';
 import AptitudeQuestionScreen from '@/app/components/screens/aptitudeQuestionScreen';
+import { DegreePath } from '@/app/enums';
 
 type DegreeChoiceBtnProps = {
-    degreeType: DegreeType;
+    degreePath: DegreePath;
     setScreen: Dispatch<SetStateAction<JSX.Element | null>>;
 };
 
-export enum DegreeType {
-    UNDERGRADUATE = 'undergraduate',
-    GRADUATE = 'graduate',
-    GRADUATE_CERTIFICATE = 'graduate_certificate',
-    NONE = 'none'
-}
-
 export default function DegreeChoiceBtn({
-    degreeType,
+    degreePath,
     setScreen
 }: DegreeChoiceBtnProps): JSX.Element {
-    let nameStrArr: string[];
-    if (degreeType === DegreeType.UNDERGRADUATE) {
-        nameStrArr = ['Undergraduate'];
-    } else if (degreeType === DegreeType.GRADUATE) {
-        nameStrArr = ['Graduate'];
-    } else if (degreeType === DegreeType.GRADUATE_CERTIFICATE) {
-        nameStrArr = ['Accelerated', 'Graduate', 'Certificate'];
+    let readableDegreeStr: string;
+    if (degreePath === DegreePath.Undergraduate) {
+        readableDegreeStr = 'Undergraduate';
+    } else if (degreePath === DegreePath.Graduate) {
+        readableDegreeStr = 'Graduate';
+    } else if (degreePath === DegreePath.GraduateCertificate) {
+        readableDegreeStr = 'Accelerated Graduate Certificate';
     } else {
-        nameStrArr = ["I don't know"];
+        readableDegreeStr = "I don't know";
     }
 
     return (
         <button
-            className={styles[degreeType]}
+            className={styles[degreePath]}
             onClick={() =>
                 setScreen(
                     <AptitudeQuestionScreen
-                        degreeType={degreeType}
+                        degreePath={degreePath}
                         setScreen={setScreen}
                     />
                 )
             }
         >
-            {nameStrArr.map((word) => (
-                <p key={word}>{word}</p>
-            ))}
+            {readableDegreeStr}
         </button>
     );
 }
