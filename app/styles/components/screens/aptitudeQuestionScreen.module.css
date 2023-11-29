@@ -17,7 +17,7 @@
 
 .undergraduate_header,
 .graduate_header,
-.graduate_certificate_header,
+.graduateCertificate_header,
 .none_header {
     position: absolute;
     top: 0;
@@ -31,14 +31,14 @@
 
 .undergraduate_header > h3,
 .graduate_header > h3,
-.graduate_certificate_header > h3,
+.graduateCertificate_header > h3,
 .none_header > h3 {
     margin-left: 3rem;
 }
 
 .undergraduate_header > p,
 .graduate_header > p,
-.graduate_certificate_header > p,
+.graduateCertificate_header > p,
 .none_header > p {
     margin-right: 3rem;
 }
@@ -53,7 +53,7 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-.graduate_certificate_header {
+.graduateCertificate_header {
     background: var(--graduate-cert-bg-color);
     color: rgba(0, 0, 0, 0.8);
 }
@@ -85,7 +85,7 @@
 
 .aptitude_question_screen_yes_btn_undergraduate,
 .aptitude_question_screen_yes_btn_graduate,
-.aptitude_question_screen_yes_btn_graduate_certificate,
+.aptitude_question_screen_yes_btn_graduateCertificate,
 .aptitude_question_screen_yes_btn_none,
 .aptitude_question_screen_no_btn {
     margin: 1rem;
@@ -107,7 +107,7 @@
     color: white;
 }
 
-.aptitude_question_screen_yes_btn_graduate_certificate {
+.aptitude_question_screen_yes_btn_graduateCertificate {
     background: var(--graduate-cert-bg-color);
 }
 
