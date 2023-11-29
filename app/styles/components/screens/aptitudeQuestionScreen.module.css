@@ -12,6 +12,7 @@
     border: 1px solid black;
     border-radius: 8px;
     color: white;
+    overflow: hidden;
 }
 
 .undergraduate_header,

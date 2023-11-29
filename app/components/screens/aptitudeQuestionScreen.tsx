@@ -1,58 +1,79 @@
 import styles from '@/app/styles/components/screens/aptitudeQuestionScreen.module.css';
 import { JSX, Dispatch, SetStateAction, useState, useEffect } from 'react';
-import { DegreeType } from '@/app/enums';
+import {
+    DegreePath,
+    UndergradDegree,
+    GradDegree,
+    GradCertDegree
+} from '@/app/enums';
 import data from '@/static/aptitude-questions.json';
 
 type AptitudeQuestionScreenProps = {
-    degreeType: DegreeType;
+    degreePath: DegreePath;
     setScreen: Dispatch<SetStateAction<JSX.Element | null>>;
+};
+type AptitudeQuestionType = {
+    question: string;
+    positiveResponseDegrees: string[];
+    negativeResponseDegrees: string[];
+};
+type UnderGradScoresType = {
+    [UndergradDegree.BaArtsDigitalComm]: number | null;
+    [UndergradDegree.BaSciSimAndGameDesign]: number | null;
+};
+type GradScoresType = {
+    [GradDegree.MaArtsIntegDesign]: number | null;
+    [GradDegree.MaFineArtsIntegDesign]: number | null;
+    [GradDegree.MaSciInterDesignAndInfoArch]: number | null;
+    [GradDegree.DocSciInfoAndInterDesign]: number | null;
+};
+type GradCertScoresType = {
+    [GradCertDegree.CertDigitialComm]: number | null;
+    [GradCertDegree.CertUserExpDesign]: number | null;
 };
 
 export default function AptitudeQuestionScreen({
-    degreeType,
+    degreePath,
     setScreen
 }: AptitudeQuestionScreenProps): JSX.Element {
-    const questionArr: string[] = data.aptitudeQuestionObjects[degreeType];
+    const questionArr: AptitudeQuestionType[] =
+        data.aptitudeQuestionObjects[degreePath];
     const [questionInd, setQuestionInd] = useState<number>(0);
     const [currQuestion, setCurrQuestion] = useState<string>(
-        questionArr[questionInd]
+        questionArr[questionInd].question
     );
 
-    const [undergradScores, setUndergradScores] = useState<{
-        baArtsDigitalComm: number | null;
-        baSciSimAndGameDesignScore: number | null;
-    }>({
-        baArtsDigitalComm: degreeType === DegreeType.UNDERGRADUATE ? 0 : null,
-        baSciSimAndGameDesignScore:
-            degreeType === DegreeType.UNDERGRADUATE ? 0 : null
+    const [undergradScores, setUndergradScores] = useState<UnderGradScoresType>(
+        {
+            [UndergradDegree.BaArtsDigitalComm]:
+                degreePath === DegreePath.Undergraduate ? 0 : null,
+            [UndergradDegree.BaSciSimAndGameDesign]:
+                degreePath === DegreePath.Undergraduate ? 0 : null
+        }
+    );
+    const [gradScores, setGradScores] = useState<GradScoresType>({
+        [GradDegree.MaArtsIntegDesign]:
+            degreePath === DegreePath.Graduate ? 0 : null,
+        [GradDegree.MaFineArtsIntegDesign]:
+            degreePath === DegreePath.Graduate ? 0 : null,
+        [GradDegree.MaSciInterDesignAndInfoArch]:
+            degreePath === DegreePath.Graduate ? 0 : null,
+        [GradDegree.DocSciInfoAndInterDesign]:
+            degreePath === DegreePath.Graduate ? 0 : null
     });
-    const [gradScores, setGradScores] = useState<{
-        maArtsIntegDesign: number | null;
-        maFineArtsIntegDesign: number | null;
-        maSciIntegDesAndInfoArch: number | null;
-        docSciInfoAndIntegDesScore: number | null;
-    }>({
-        maArtsIntegDesign: degreeType === DegreeType.GRADUATE ? 0 : null,
-        maFineArtsIntegDesign: degreeType === DegreeType.GRADUATE ? 0 : null,
-        maSciIntegDesAndInfoArch: degreeType === DegreeType.GRADUATE ? 0 : null,
-        docSciInfoAndIntegDesScore:
-            degreeType === DegreeType.GRADUATE ? 0 : null
-    });
-    const [gradCertScores, setGradCertScores] = useState<{
-        certDigitalComm: number | null;
-        certUserExp: number | null;
-    }>({
-        certDigitalComm:
-            degreeType === DegreeType.GRADUATE_CERTIFICATE ? 0 : null,
-        certUserExp: degreeType === DegreeType.GRADUATE_CERTIFICATE ? 0 : null
+    const [gradCertScores, setGradCertScores] = useState<GradCertScoresType>({
+        [GradCertDegree.CertDigitialComm]:
+            degreePath === DegreePath.GraduateCertificate ? 0 : null,
+        [GradCertDegree.CertUserExpDesign]:
+            degreePath === DegreePath.GraduateCertificate ? 0 : null
     });
 
     let readableDegree: string;
-    if (degreeType === DegreeType.UNDERGRADUATE) {
+    if (degreePath === DegreePath.Undergraduate) {
         readableDegree = 'Undergraduate';
-    } else if (degreeType === DegreeType.GRADUATE) {
+    } else if (degreePath === DegreePath.Graduate) {
         readableDegree = 'Graduate';
-    } else if (degreeType === DegreeType.GRADUATE_CERTIFICATE) {
+    } else if (degreePath === DegreePath.GraduateCertificate) {
         readableDegree = 'Graduate Certificate';
     } else {
         readableDegree = 'None';
@@ -66,7 +87,7 @@ export default function AptitudeQuestionScreen({
 
     return (
         <div className={styles.aptitude_question_screen}>
-            <div className={styles[`${degreeType}_header`]}>
+            <div className={styles[`${degreePath}_header`]}>
                 <h3>{readableDegree} Path</h3>
                 <p>Answer each statement to the best of your ability.</p>
             </div>
@@ -76,7 +97,7 @@ export default function AptitudeQuestionScreen({
                     <button
                         className={
                             styles[
-                                `aptitude_question_screen_yes_btn_${degreeType}`
+                                `aptitude_question_screen_yes_btn_${degreePath}`
                             ]
                         }
                     >

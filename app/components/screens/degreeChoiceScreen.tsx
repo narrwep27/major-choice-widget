@@ -1,7 +1,7 @@
 import styles from '@/app/styles/components/screens/degreeChoiceScreen.module.css';
 import { Dispatch, SetStateAction, JSX } from 'react';
 import DegreeChoiceBtn from '../ui/degreeChoiceBtn';
-import { DegreeType } from '@/app/enums';
+import { DegreePath } from '@/app/enums';
 
 export default function DegreeChoiceScreen({
     setScreen
@@ -16,21 +16,21 @@ export default function DegreeChoiceScreen({
             </div>
             <div className={styles.degree_choice_screen_button_div}>
                 <DegreeChoiceBtn
-                    degreeType={DegreeType.UNDERGRADUATE}
+                    degreePath={DegreePath.Undergraduate}
                     setScreen={setScreen}
                 />
                 <DegreeChoiceBtn
-                    degreeType={DegreeType.GRADUATE}
+                    degreePath={DegreePath.Graduate}
                     setScreen={setScreen}
                 />
                 <DegreeChoiceBtn
-                    degreeType={DegreeType.GRADUATE_CERTIFICATE}
+                    degreePath={DegreePath.GraduateCertificate}
                     setScreen={setScreen}
                 />
-                <DegreeChoiceBtn
-                    degreeType={DegreeType.NONE}
+                {/* <DegreeChoiceBtn
+                    degreePath={DegreePath.None}
                     setScreen={setScreen}
-                />
+                /> */}
             </div>
         </div>
     );

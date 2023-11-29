@@ -1,23 +1,23 @@
 import { JSX, Dispatch, SetStateAction } from 'react';
 import styles from '@/app/styles/components/ui/degreeChoiceBtn.module.css';
 import AptitudeQuestionScreen from '@/app/components/screens/aptitudeQuestionScreen';
-import { DegreeType } from '@/app/enums';
+import { DegreePath } from '@/app/enums';
 
 type DegreeChoiceBtnProps = {
-    degreeType: DegreeType;
+    degreePath: DegreePath;
     setScreen: Dispatch<SetStateAction<JSX.Element | null>>;
 };
 
 export default function DegreeChoiceBtn({
-    degreeType,
+    degreePath,
     setScreen
 }: DegreeChoiceBtnProps): JSX.Element {
     let readableDegreeStr: string;
-    if (degreeType === DegreeType.UNDERGRADUATE) {
+    if (degreePath === DegreePath.Undergraduate) {
         readableDegreeStr = 'Undergraduate';
-    } else if (degreeType === DegreeType.GRADUATE) {
+    } else if (degreePath === DegreePath.Graduate) {
         readableDegreeStr = 'Graduate';
-    } else if (degreeType === DegreeType.GRADUATE_CERTIFICATE) {
+    } else if (degreePath === DegreePath.GraduateCertificate) {
         readableDegreeStr = 'Accelerated Graduate Certificate';
     } else {
         readableDegreeStr = "I don't know";
@@ -25,11 +25,11 @@ export default function DegreeChoiceBtn({
 
     return (
         <button
-            className={styles[degreeType]}
+            className={styles[degreePath]}
             onClick={() =>
                 setScreen(
                     <AptitudeQuestionScreen
-                        degreeType={degreeType}
+                        degreePath={degreePath}
                         setScreen={setScreen}
                     />
                 )

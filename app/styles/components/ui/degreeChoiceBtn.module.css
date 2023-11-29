@@ -2,15 +2,15 @@
 
 .undergraduate,
 .graduate,
-.graduate_certificate,
+.graduateCertificate,
 .none {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    width: 19%;
+    width: 20%;
     font-family: Meta Pro;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-style: none;
     text-align: center;
 }
