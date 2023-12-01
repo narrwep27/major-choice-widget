@@ -1,0 +1,35 @@
+@import url('../../../../static//meta-pro-fonts/fonts.css');
+
+.results_loading_screen_undergraduate,
+.results_loading_screen_graduate,
+.results_loading_screen_graduateCertificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: var(--widget-height);
+    width: var(--widget-width);
+    font-family: Meta Pro Book;
+}
+
+.results_loading_screen_undergraduate {
+    background: var(--undergrad-bg-color);
+    color: white;
+}
+
+.results_loading_screen_graduate {
+    background: var(--graduate-bg-color);
+    color: white;
+}
+
+.results_loading_screen_graduateCertificate {
+    background: var(--graduate-cert-bg-color);
+}
+
+.results_loading_screen_undergraduate > h2,
+.results_loading_screen_graduate > h2,
+.results_loading_screen_graduateCertificate > h2 {
+    margin-bottom: 3rem;
+}
