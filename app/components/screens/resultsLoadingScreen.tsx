@@ -4,7 +4,7 @@ import { RspnsRecord } from '@/app/utils/aptitudeQuestionScreen/types';
 import { DegreePath } from '@/app/enums';
 import styles from '@/app/styles/components/screens/resultsLoadingScreen.module.css';
 import EndScreen from './endScreen';
-import bookGif from '@/app/static/images/book-gif.gif';
+import bookGif from '@/public/images/book-gif.gif';
 
 type ResultsLoadingScreenProps = {
     setScreen: Dispatch<SetStateAction<JSX.Element | null>>;
