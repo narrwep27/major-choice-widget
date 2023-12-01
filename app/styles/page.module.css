@@ -1,4 +1,4 @@
-@import url('../../static/meta-pro-fonts/fonts.css');
+@import url('../static/meta-pro-fonts/fonts.css');
 
 .container {
     display: flex;
@@ -13,7 +13,7 @@
     width: var(--widget-width);
     height: var(--widget-height);
     padding: 0.4rem;
-    background-image: url('../../static/images/home-screen.png');
+    background-image: url('../static/images/home-screen.png');
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid black;
