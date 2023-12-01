@@ -1,0 +1,9 @@
+@import url('../../../../static//meta-pro-fonts/fonts.css');
+
+.end_screen_div {
+    width: var(--widget-width);
+    height: var(--widget-height);
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: Meta Pro Book;
+}
