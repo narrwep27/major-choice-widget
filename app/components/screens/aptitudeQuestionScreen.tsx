@@ -10,7 +10,7 @@ import {
     getReadableDegreeName,
     createNewRspnsHstryArr
 } from '@/app/utils/aptitudeQuestionScreen/utils';
-import data from '@/static/aptitude-questions.json';
+import data from '@/app/static/aptitude-questions.json';
 import DegreeChoiceScreen from './degreeChoiceScreen';
 import ResultsLoadingScreen from './resultsLoadingScreen';
 
