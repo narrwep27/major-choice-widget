@@ -1,4 +1,16 @@
-import { UndergradDegreeStr, GradDegreeStr, GradCertDegreeStr } from './types';
+type UndergradDegreeStr =
+    | 'bachelorOfArtsInDigitalCommunication'
+    | 'bachelorOfScienceInSimulationAndGameDesign';
+
+type GradDegreeStr =
+    | 'masterOfArtsInIntegratedDesign'
+    | 'masterOfFineArtsInIntegratedDesign'
+    | 'masterOfScienceInInteractionDesignAndInformationArchitecture'
+    | 'doctorOfScienceInInformationAndInteractionDesign';
+
+type GradCertDegreeStr =
+    | 'certificateInDigitalCommunication'
+    | 'certificateInUserExperienceDesign';
 
 export const isUndergradDegreeStr = (str: string): str is UndergradDegreeStr =>
     str === 'bachelorOfArtsInDigitalCommunication' ||

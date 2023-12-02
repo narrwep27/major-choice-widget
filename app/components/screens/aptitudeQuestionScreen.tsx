@@ -1,18 +1,32 @@
 import styles from '@/app/styles/components/screens/aptitudeQuestionScreen.module.css';
-import { MutableRefObject, useRef, useState } from 'react';
-import {
-    AptitudeQuestionScreenProps,
-    AptitudeQstn,
-    QstnObjState,
-    RspnsRecord
-} from '@/app/utils/aptitudeQuestionScreen/types';
+import { useRef, useState, Dispatch, SetStateAction } from 'react';
+import { DegreePath } from '@/app/enums';
 import {
     getReadableDegreeName,
     createNewRspnsHstryArr
-} from '@/app/utils/aptitudeQuestionScreen/utils';
+} from '@/app/utils/utils';
 import data from '@/app/static/aptitude-questions.json';
 import DegreeChoiceScreen from './degreeChoiceScreen';
 import ResultsLoadingScreen from './resultsLoadingScreen';
+
+type AptitudeQuestionScreenProps = {
+    degreePath: DegreePath;
+    setScreen: Dispatch<SetStateAction<JSX.Element | null>>;
+};
+type QstnObjState = {
+    qstnInd: number;
+    currQstn: string;
+};
+type AptitudeQstn = {
+    question: string;
+    positiveResponseDegrees: string[];
+    negativeResponseDegrees: string[];
+};
+export type RspnsRecord = {
+    aptQstn: AptitudeQstn;
+    qstnInd: number;
+    usrRspns: 'yes' | 'no' | 'skip' | null;
+};
 
 export default function AptitudeQuestionScreen({
     degreePath,
@@ -28,7 +42,6 @@ export default function AptitudeQuestionScreen({
             usrRspns: null
         }))
     );
-
     const [qstnObj, setQstnObj] = useState<QstnObjState>({
         qstnInd: 0,
         currQstn: aptitudeQstnArr[0].question
