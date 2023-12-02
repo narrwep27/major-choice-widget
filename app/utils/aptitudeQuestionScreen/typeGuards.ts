@@ -1,39 +1,15 @@
-import { UndergradDegree, GradDegree, GradCertDegree } from '@/app/enums';
-import {
-    UndergradDegreeStrArr,
-    GradDegreeStrArr,
-    GradCertDegreeStrArr
-} from './types';
+import { UndergradDegreeStr, GradDegreeStr, GradCertDegreeStr } from './types';
 
-export const isUndergradDegreeStrArr = (
-    strArr: string[]
-): strArr is UndergradDegreeStrArr => {
-    return strArr.every(
-        (str) =>
-            str === 'bachelorOfArtsInDigitalCommunication' ||
-            str === 'bachelorOfScienceInSimulationAndGameDesign'
-    );
-};
+export const isUndergradDegreeStr = (str: string): str is UndergradDegreeStr =>
+    str === 'bachelorOfArtsInDigitalCommunication' ||
+    str === 'bachelorOfScienceInSimulationAndGameDesign';
 
-export const isGradDegreeStrArr = (
-    strArr: string[]
-): strArr is GradDegreeStrArr => {
-    return strArr.every(
-        (str) =>
-            str === 'masterOfArtsInIntegratedDesign' ||
-            str === 'masterOfFineArtsInIntegratedDesign' ||
-            str ===
-                'masterOfScienceInInteractionDesignAndInformationArchitecture' ||
-            str === 'doctorOfScienceInInformationAndInteractionDesign'
-    );
-};
+export const isGradDegreeStr = (str: string): str is GradDegreeStr =>
+    str === 'masterOfArtsInIntegratedDesign' ||
+    str === 'masterOfFineArtsInIntegratedDesign' ||
+    str === 'masterOfScienceInInteractionDesignAndInformationArchitecture' ||
+    str === 'doctorOfScienceInInformationAndInteractionDesign';
 
-export const isGradCertDegreeStrArr = (
-    strArr: string[]
-): strArr is GradCertDegreeStrArr => {
-    return strArr.every(
-        (str) =>
-            str === 'certificateInDigitalCommunication' ||
-            str === 'certificateInUserExperienceDesign'
-    );
-};
+export const isGradCertDegreeStr = (str: string): str is GradCertDegreeStr =>
+    str === 'certificateInDigitalCommunication' ||
+    str === 'certificateInUserExperienceDesign';

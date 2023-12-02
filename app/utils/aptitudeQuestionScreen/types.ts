@@ -23,19 +23,16 @@ export type RspnsRecord = {
     usrRspns: 'yes' | 'no' | 'skip' | null;
 };
 
-export type UndergradDegreeStrArr = (
+export type UndergradDegreeStr =
     | 'bachelorOfArtsInDigitalCommunication'
-    | 'bachelorOfScienceInSimulationAndGameDesign'
-)[];
+    | 'bachelorOfScienceInSimulationAndGameDesign';
 
-export type GradDegreeStrArr = (
+export type GradDegreeStr =
     | 'masterOfArtsInIntegratedDesign'
     | 'masterOfFineArtsInIntegratedDesign'
     | 'masterOfScienceInInteractionDesignAndInformationArchitecture'
-    | 'doctorOfScienceInInformationAndInteractionDesign'
-)[];
+    | 'doctorOfScienceInInformationAndInteractionDesign';
 
-export type GradCertDegreeStrArr = (
+export type GradCertDegreeStr =
     | 'certificateInDigitalCommunication'
-    | 'certificateInUserExperienceDesign'
-)[];
+    | 'certificateInUserExperienceDesign';
