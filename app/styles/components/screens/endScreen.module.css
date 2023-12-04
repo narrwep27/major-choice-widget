@@ -1,9 +1,110 @@
 @import url('../../../static/meta-pro-fonts/fonts.css');
 
-.end_screen_div {
+.end_screen {
     width: var(--widget-width);
     height: var(--widget-height);
     border: 1px solid black;
     border-radius: 8px;
     font-family: Meta Pro Book;
+    background-image: url('../../../../public/images/End-screen-BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.end_screen_header_undergraduate,
+.end_screen_header_graduate,
+.end_screen_header_graduateCertificate {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+}
+
+.end_screen_header_undergraduate {
+    background: var(--undergrad-bg-color);
+}
+
+.end_screen_header_graduate {
+    background: var(--graduate-bg-color);
+}
+
+.end_screen_header_graduateCertificate {
+    background: var(--graduate-cert-bg-color);
+}
+
+.end_screen_content_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 61%;
+    margin-left: 35px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.end_screen_content_div > h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.end_screen_content_learn_more_btn_undergraduate,
+.end_screen_content_learn_more_btn_graduate,
+.end_screen_content_learn_more_btn_graduateCertificate {
+    border-style: none;
+    width: 35%;
+    padding: 0.5rem 0;
+    font-family: Meta Pro Cond Xbold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 2.8rem;
+}
+
+.end_screen_content_learn_more_btn_undergraduate {
+    background: var(--undergrad-bg-color);
+    color: white;
+}
+
+.end_screen_content_learn_more_btn_graduate {
+    background: var(--graduate-bg-color);
+    color: white;
+}
+
+.end_screen_content_learn_more_btn_graduateCertificate {
+    background: var(--graduate-cert-bg-color);
+}
+
+.end_screen_content_link_div {
+    font-size: 0.9rem;
+}
+
+.end_screen_content_link_div > a {
+    display: block;
+    margin: 6px 0;
+}
+
+.end_screen_content_link_div > a > span {
+    margin-right: 6px;
+}
+
+.start_over_btn {
+    background: rgb(241, 209, 48);
+    border-style: none;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    cursor: pointer;
+    margin: 3.5rem;
+}
+
+.start_over_btn > p {
+    position: absolute;
+    font-size: 0.9rem;
 }

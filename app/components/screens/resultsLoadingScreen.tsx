@@ -1,32 +1,65 @@
 import { SetStateAction, Dispatch, useEffect } from 'react';
 import Image from 'next/image';
-import { RspnsRecord } from '@/app/utils/aptitudeQuestionScreen/types';
-import { DegreePath } from '@/app/enums';
+import { RspnsRecord } from './aptitudeQuestionScreen';
+import {
+    DegreePath,
+    UndergradDegree,
+    GradDegree,
+    GradCertDegree
+} from '@/app/enums';
 import styles from '@/app/styles/components/screens/resultsLoadingScreen.module.css';
 import EndScreen from './endScreen';
 import bookGif from '@/public/images/book-gif.gif';
+import { sleep, countDegreeScoresAndGroup } from '@/app/utils/utils';
 
 type ResultsLoadingScreenProps = {
     setScreen: Dispatch<SetStateAction<JSX.Element | null>>;
-    rsponsRecords: RspnsRecord[];
     degreePath: DegreePath;
+    rspnsRecords: RspnsRecord[];
 };
-
-const sleep = async (ms: number) =>
-    new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function ResultsLoadingScreen({
     setScreen,
-    rsponsRecords,
-    degreePath
+    degreePath,
+    rspnsRecords
 }: ResultsLoadingScreenProps) {
-    const matchDegrees = () => {};
     useEffect(() => {
         const matchDegreeAndSetEndScreen = async () => {
             await sleep(3000);
-            // setScreen(<EndScreen setScreen={setScreen} />);
-            console.log(rsponsRecords);
-            console.log('transfer to EndScreen');
+
+            const groupedDegrees: {
+                [key: number]: (
+                    | UndergradDegree
+                    | GradDegree
+                    | GradCertDegree
+                )[];
+            } = countDegreeScoresAndGroup(degreePath, rspnsRecords);
+            const allScores = Object.keys(groupedDegrees).map((key) =>
+                parseInt(key)
+            );
+            const maxScore = Math.max(...allScores);
+            const maxScoreDegrees = groupedDegrees[maxScore];
+
+            if (maxScoreDegrees.length === 1) {
+                setScreen(
+                    <EndScreen
+                        setScreen={setScreen}
+                        degreePath={degreePath}
+                        matchedDegree={maxScoreDegrees[0]}
+                    />
+                );
+            } else {
+                const randInd = Math.floor(
+                    Math.random() * maxScoreDegrees.length
+                );
+                setScreen(
+                    <EndScreen
+                        setScreen={setScreen}
+                        degreePath={degreePath}
+                        matchedDegree={maxScoreDegrees[randInd]}
+                    />
+                );
+            }
         };
 
         matchDegreeAndSetEndScreen();
