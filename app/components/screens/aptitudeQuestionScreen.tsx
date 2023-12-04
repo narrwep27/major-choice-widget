@@ -82,7 +82,7 @@ export default function AptitudeQuestionScreen({
 
     return (
         <div className={styles.aptitude_question_screen}>
-            <div className={styles[`${degreePath}_header`]}>
+            <div className={styles[`header_${degreePath}`]}>
                 <h3>{getReadableDegreeName(degreePath)} Path</h3>
                 <p>Answer each statement to the best of your ability.</p>
             </div>

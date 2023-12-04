@@ -16,10 +16,9 @@
     font-family: Meta Pro Book;
 }
 
-.undergraduate_header,
-.graduate_header,
-.graduateCertificate_header,
-.none_header {
+.header_undergraduate,
+.header_graduate,
+.header_graduateCertificate {
     position: absolute;
     top: 0;
     display: flex;
@@ -29,37 +28,30 @@
     width: 100%;
 }
 
-.undergraduate_header > h3,
-.graduate_header > h3,
-.graduateCertificate_header > h3,
-.none_header > h3 {
+.header_undergraduate > h3,
+.header_graduate > h3,
+.header_graduateCertificate > h3 {
     margin-left: 3rem;
 }
 
-.undergraduate_header > p,
-.graduate_header > p,
-.graduateCertificate_header > p,
-.none_header > p {
+.header_undergraduate > p,
+.header_graduate > p,
+.header_graduateCertificate > p {
     margin-right: 3rem;
 }
 
-.undergraduate_header {
+.header_undergraduate {
     background: var(--undergrad-bg-color);
     color: rgba(255, 255, 255, 0.8);
 }
 
-.graduate_header {
+.header_graduate {
     background: var(--graduate-bg-color);
     color: rgba(255, 255, 255, 0.8);
 }
 
-.graduateCertificate_header {
+.header_graduateCertificate {
     background: var(--graduate-cert-bg-color);
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.none_header {
-    background: var(--gray-color);
     color: rgba(0, 0, 0, 0.8);
 }
 
