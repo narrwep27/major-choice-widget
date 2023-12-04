@@ -2,7 +2,7 @@
     "aptitudeQuestionObjects": {
         "undergraduate": [
             {
-                "question": "I would like to expand on my writing skills.",
+                "question": "I want my art to reach out into the world.",
                 "positiveResponseDegrees": [
                     "bachelorOfArtsInDigitalCommunication"
                 ],
@@ -11,7 +11,7 @@
                 ]
             },
             {
-                "question": "I would like to learn the fundamentals of game design.",
+                "question": "I want to create immersive worlds.",
                 "positiveResponseDegrees": [
                     "bachelorOfScienceInSimulationAndGameDesign"
                 ],
@@ -20,7 +20,7 @@
                 ]
             },
             {
-                "question": "I have a strong visual imagination.",
+                "question": "I want to expand upon my coding skills.",
                 "positiveResponseDegrees": [
                     "bachelorOfScienceInSimulationAndGameDesign"
                 ],
@@ -29,7 +29,7 @@
                 ]
             },
             {
-                "question": "I enjoy working with computers and technology.",
+                "question": "I want to use my visual imagination to create valuable things.",
                 "positiveResponseDegrees": [
                     "bachelorOfScienceInSimulationAndGameDesign"
                 ],
@@ -38,25 +38,7 @@
                 ]
             },
             {
-                "question": "I like interacting with other people.",
-                "positiveResponseDegrees": [
-                    "bachelorOfArtsInDigitalCommunication"
-                ],
-                "negativeResponseDegrees": [
-                    "bachelorOfScienceInSimulationAndGameDesign"
-                ]
-            },
-            {
-                "question": "I enjoy keeping up with pop culture.",
-                "positiveResponseDegrees": [
-                    "bachelorOfArtsInDigitalCommunication"
-                ],
-                "negativeResponseDegrees": [
-                    "bachelorOfScienceInSimulationAndGameDesign"
-                ]
-            },
-            {
-                "question": "I enjoy coding.",
+                "question": "I am comfortable with working on a project for long periods of time.",
                 "positiveResponseDegrees": [
                     "bachelorOfScienceInSimulationAndGameDesign"
                 ],
@@ -65,7 +47,34 @@
                 ]
             },
             {
-                "question": "I have the ability of coming up with new ways of doing things.",
+                "question": "I want to be in the know of social topics and trends.",
+                "positiveResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ]
+            },
+            {
+                "question": "I want to bring people together.",
+                "positiveResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ]
+            },
+            {
+                "question": "I want to understand people, processes, and channels of communication more.",
+                "positiveResponseDegrees": [
+                    "bachelorOfArtsInDigitalCommunication"
+                ],
+                "negativeResponseDegrees": [
+                    "bachelorOfScienceInSimulationAndGameDesign"
+                ]
+            },
+            {
+                "question": "I have the ability to come up with new ways of doing things.",
                 "positiveResponseDegrees": [
                     "bachelorOfScienceInSimulationAndGameDesign"
                 ],
@@ -74,27 +83,18 @@
                 ]
             },
             {
-                "question": "I like seeing my work on display.",
+                "question": "I want to use stories to compel my audience to interact with me.",
                 "positiveResponseDegrees": [
-                    "bachelorOfScienceInSimulationAndGameDesign"
+                    "bachelorOfArtsInDigitalCommunication"
                 ],
                 "negativeResponseDegrees": [
-                    "bachelorOfArtsInDigitalCommunication"
-                ]
-            },
-            {
-                "question": "I am comfortable with working on a project for long spans of time.",
-                "positiveResponseDegrees": [
                     "bachelorOfScienceInSimulationAndGameDesign"
-                ],
-                "negativeResponseDegrees": [
-                    "bachelorOfArtsInDigitalCommunication"
                 ]
             }
         ],
         "graduate": [
             {
-                "question": "I need the freedom to be creative and express myself.",
+                "question": "I want to have creative freedom in my projects.",
                 "positiveResponseDegrees": [
                     "masterOfArtsInIntegratedDesign",
                     "masterOfFineArtsInIntegratedDesign"
@@ -105,7 +105,7 @@
                 ]
             },
             {
-                "question": "I am very ambitious, persuasive, and love coming up with new ideas.",
+                "question": "I want to be part of the decision-making process.",
                 "positiveResponseDegrees": [
                     "masterOfArtsInIntegratedDesign",
                     "masterOfFineArtsInIntegratedDesign"
@@ -116,7 +116,7 @@
                 ]
             },
             {
-                "question": "I enjoy learning why people make certain decisions. I like to understand how people think and process information.",
+                "question": "I want to understand why people make certain decisions based on the visuals they see.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
@@ -127,7 +127,7 @@
                 ]
             },
             {
-                "question": "I enjoy expressing myself through writing.",
+                "question": "I want to use writing as a way to connect with my audience.",
                 "positiveResponseDegrees": [
                     "masterOfArtsInIntegratedDesign",
                     "masterOfFineArtsInIntegratedDesign"
@@ -138,7 +138,7 @@
                 ]
             },
             {
-                "question": "I like to work with people.",
+                "question": "I want to work with teams of people.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
@@ -149,7 +149,7 @@
                 ]
             },
             {
-                "question": "I welcome unexpected changes.",
+                "question": "I want to have a variety in my daily work life.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
@@ -160,7 +160,7 @@
                 ]
             },
             {
-                "question": "I like tasks that involve problem solving.",
+                "question": "I want to solve problems in the design world.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
@@ -171,7 +171,7 @@
                 ]
             },
             {
-                "question": "I want to help bring accessibility to children and people in need of assistance with technology.",
+                "question": "I want to use design to reach specific audiences and include children.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
@@ -182,7 +182,7 @@
                 ]
             },
             {
-                "question": "I like being hands on with my work.",
+                "question": "I want to be involved in the whole process.",
                 "positiveResponseDegrees": [
                     "masterOfArtsInIntegratedDesign",
                     "masterOfFineArtsInIntegratedDesign"
@@ -193,7 +193,7 @@
                 ]
             },
             {
-                "question": "I like being involved in every integrated detail of the project and get excited when I see the bigger picture or final output.",
+                "question": "I want to integrate computer science with the arts of a usable product.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
@@ -204,7 +204,7 @@
                 ]
             },
             {
-                "question": "I like actively listening and following up with good questions to better communicate to help the needs of the other person.",
+                "question": "I want to help clients fulfill their vision.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
@@ -215,7 +215,7 @@
                 ]
             },
             {
-                "question": "I often pay close a†tention to detail and am well organized.",
+                "question": "I like being able to manage my projects through the whole process.",
                 "positiveResponseDegrees": [
                     "masterOfScienceInInteractionDesignAndInformationArchitecture",
                     "doctorOfScienceInInformationAndInteractionDesign"
